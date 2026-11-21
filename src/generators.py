@@ -1,4 +1,5 @@
 import random
+
 from .errors import NotIntError
 
 

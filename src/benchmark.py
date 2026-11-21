@@ -2,6 +2,7 @@ import csv
 import statistics
 import time
 
+
 def time_value(func, par, repeats=5) -> list[time]:
     time_values = []
     for i in range(repeats):

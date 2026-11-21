@@ -1,4 +1,5 @@
-from .errors import NotIntError, IncorrectExpError
+from .errors import IncorrectExpError, NotIntError
+
 
 def _validate(number, exp):
     if type(number) != int or type(exp) != int:

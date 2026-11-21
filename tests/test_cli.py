@@ -1,5 +1,6 @@
 from src.main import main
-from src.recur import fast_pow_rec, fast_pow_loop
+from src.recur import fast_pow_loop, fast_pow_rec
+
 
 def test_pow_matches_builtin():
     assert fast_pow_rec(2, 10) == fast_pow_loop(2, 10) == 2 ** 10

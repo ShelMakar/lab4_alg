@@ -1,12 +1,12 @@
 import argparse
+import sys
 
 from .benchmark import benchmark, write_csv
-from .errors import EmptyQueueError,CliError
+from .errors import CliError, EmptyQueueError
 from .generators import GENERATORS
+from .recur import fast_pow_loop, fast_pow_rec
 from .sort import quick_sort, selection_sort
 from .struct import Queue
-import sys
-from .recur import fast_pow_rec, fast_pow_loop
 
 POW_METHODS = {"rec": fast_pow_rec, "loop": fast_pow_loop}
 
